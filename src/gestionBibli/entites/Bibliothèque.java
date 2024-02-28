@@ -1,6 +1,6 @@
 package gestionBibli.entites;
 
-import java.util.Arrays;
+
 
 public class Bibliothèque {
 	

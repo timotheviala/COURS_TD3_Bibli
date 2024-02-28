@@ -13,9 +13,11 @@ public class Ouvrage {
 	private String editeur;
 	private int annee;
 	private int nbExemplaires=0;
+	private GenreLittéraire genre;
 	
 	//constructeur
-	public Ouvrage(String titre,String auteurs,String isbn,String editeur,int annee) {
+	public Ouvrage(String titre,String auteurs,String isbn,String editeur,int annee,GenreLittéraire genre) {
+		this.genre=genre;
 		this.titre=titre;
 		this.auteurs=auteurs;
 		this.isbn=isbn;
@@ -82,11 +84,13 @@ public class Ouvrage {
 		return nbExemplaires;
 	}
 	
-	//test
+	//méthode globale
 	public static void main(String args []) {
-		Ouvrage monOuvrage=new Ouvrage("Shinning","Stephen King","ISBN-01","Hachette",1977);
-		System.out.println(monOuvrage.getTitre());
-		}
-	
-
+		Ouvrage monOuvrage=new Ouvrage("Shinning","Stephen King","ISBN_01","Hachette",1977,GenreLittéraire.SF);
+		
+		
+	}
 }
+
+	
+	
